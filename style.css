@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ececf1;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.phone {
+  width: 320px;
+  background: #d7d9e1;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.checkmark {
+  font-size: 20px;
+}
+
+.search-box input {
+  width: 93%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.card {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 12px;
+  height: 80px;
+}
+
+.create-btn {
+  width: 100%;
+  background: #3ba55d;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 30px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.itinerary-form input,
+.itinerary-form select {
+  width: 90%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+#activityList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#activityList li {
+  background: white;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.save-btn {
+  width: 100%;
+  background: #3ba55d;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.topbar { display:flex; align-items:center; justify-content:space-between; padding:12px 8px; }
+.top-title { font-weight:700; text-align:center; flex:1; }
+.breadcrumb ol { display:flex; gap:10px; list-style:none; padding:6px 0; color:#555; font-size:14px; }
+.breadcrumb li + li:before { content: "›"; color:#aaa; margin-right:8px; }
+
+.error { color: #b00020; margin-top:6px; font-size:13px; }
+.req { color:#d00; }
+
+#toast { position: fixed; bottom: 20px; right: 20px; color:#fff; padding:10px 14px; border-radius:6px; font-weight:600; display:inline-block; box-shadow:0 4px 12px rgba(0,0,0,0.12); }
+
+.app {
+  max-width:1200px;
+  margin:20px auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+  align-items:start;
+}
+.panel {
+  background:#e6e7ec; border-radius:16px; padding:18px;
+}
+.card { background:#fff; border-radius:10px; padding:12px; min-height:90px; }
+@media (max-width:880px) {
+  .app { grid-template-columns: 1fr; padding:10px; }
+}

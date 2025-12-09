@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itinerary UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ol>
+    <li><a href="#" aria-current="false">Home</a></li>
+    <li><a href="#" aria-current="false">Itineraries</a></li>
+    <li aria-current="page">Create</li>
+  </ol>
+</nav>
+
+<body>
+  <div class="phone">
+    <div class="topbar">⬅ Itinerary</div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search Itineraries" />
+    </div>
+
+    <div class="card">📍 Paris<br><small>July 15–20</small></div>
+    <div class="card">🧳 New York<br><small>Aug 5–10</small></div>
+    <div class="card">🧳 Bali<br><small>Sep 10–18</small></div>
+
+    <button class="create-btn">＋ Create Itinerary</button>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+
+<div class="phone">
+    <div class="topbar">
+      <span class="Left arrow">⬅</span>
+      <span>Create Itinerary</span>
+      <span class="checkmark">✔</span>
+    </div>
+
+   <div class="form">
+
+    <label>Itinerary Name</label>
+    <input id="itineraryName" type="text" placeholder="Trip Name">
+
+    <label>Destination</label>
+    <select id="destination">
+      <option value="" disabled selected>Select…</option>
+      <option>Paris</option>
+      <option>New York</option>
+      <option>Bali</option>
+    </select>
+
+    <label>Start Date</label>
+    <input id="startDate" type="date">
+
+    <label>End Date</label>
+    <input id="endDate" type="date">
+
+    <label>Travel Notes</label>
+    <textarea id="notes" placeholder="Add notes..."></textarea>
+
+    <label>Add Activity</label>
+    <div class="activity-row">
+      <input id="activityInput" type="text" placeholder="Activity name">
+      <button onclick="addActivity()" class="add-btn">+</button>
+    </div>
+
+    <ul id="activityList"></ul>
+
+  </div>
+
+  <button class="save-bottom" onclick="saveItinerary()">Save itinerary</button>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
